@@ -1,5 +1,5 @@
 public class ScratchWork {
-    public static void Main(String[] args) {
-        
-    }
+   public static void main(String[] args) {
+      
+   }
 }
