@@ -1,30 +1,24 @@
-import java.util.Scanner;
+import java.util.Scanner; 
 
 public class LabProgram {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static String createAcronym(String userPhrase) {
+        String[] seperatedWords = userPhrase.split(" ");
+        String acronymString = "";
 
-        int numWords = sc.nextInt();
-
-        String[] words = new String[numWords];
-        int[] frequencies = new int[numWords];
-
-        for (int i = 0; i < numWords; i++) {
-            words[i] = sc.next();
-            frequencies[i] = 1;
-        }
-
-        for (int i = 0; i < numWords; i++) {
-            for (int j = i + 1; j < numWords; j++) {
-                if (words[i].equals(words[j])) {
-                    frequencies[i]++;
-                    frequencies[j] = frequencies[i];
-                }
+        for(String word : seperatedWords) {
+            if(Character.isUpperCase(word.charAt(0))) {
+                acronymString += word.charAt(0) + ".";
             }
         }
 
-        for (int i = 0; i < numWords; i++) {
-            System.out.println(words[i] + " - " + frequencies[i]);
-        }
+        return acronymString;
+    }
+
+    public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+
+        String input = scnr.nextLine();
+        
+        System.out.println(createAcronym(input));
     }
 }
