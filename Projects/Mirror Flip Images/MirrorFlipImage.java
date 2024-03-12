@@ -21,6 +21,7 @@ public class MirrorFlipImage {
             for(int column = 0; column < image[row].length; column++) {
                 System.out.print(image[row][column] + " ");
             }
+            
             System.out.println();
         }
         System.out.println();
