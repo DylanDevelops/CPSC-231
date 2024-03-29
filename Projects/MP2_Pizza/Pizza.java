@@ -1,4 +1,4 @@
-package Projects.Pizza;
+package Projects.MP2_Pizza;
 
 /**
  * Name: Dylan M. Ravel
