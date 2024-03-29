@@ -62,7 +62,7 @@ public class Deck {
     /**
      * Deals a random card from the deck.
      * 
-     * @return 
+     * @return The card that was pulled from the deck.
      */
     public Card deal() {
         Random randy = new Random();

@@ -11,7 +11,13 @@ package Projects.MP3A_Cards;
 // Import statement needed for my program to work.
 import java.util.LinkedList;
 
+/**
+ * The class meant for testing all the other classes.
+ */
 public class TestCards {
+    /**
+     * The main method that runs when the program starts.
+     */
     public static void main(String[] args) {
         // Test Card Class
         Card card = new Card(1, 0);
@@ -25,8 +31,9 @@ public class TestCards {
         Dealer dealer = new Dealer();
         System.out.println("Dealer's deck size: " + dealer.size());
 
+        // Tests Dealing Cards
         LinkedList<Card> dealtCards = dealer.deals(5);
         System.out.println("Dealt Cards: " + dealtCards);
-        System.out.println("Dealer's Deck Size: " + dealer.size());
+        System.out.println("Dealer's Deck Size After Dealing: " + dealer.size());
     }
 }
