@@ -1,5 +1,3 @@
-package Projects.MP3A_Cards;
-
 /**
  * Name: Dylan M. Ravel
  * Student ID: 2445987
@@ -90,7 +88,7 @@ public class Card {
         }
         
         String value = "";
-        if(m_value > 10) {
+        if(m_value > 10 || m_value == 1) {
             switch(m_value) {
                 case JACK:
                     value = "Jack";
@@ -105,6 +103,7 @@ public class Card {
                     break;
 
                 case ACE:
+                case 1:
                     value = "Ace";
                     break;
 
