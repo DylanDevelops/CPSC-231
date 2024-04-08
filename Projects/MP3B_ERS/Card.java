@@ -1,11 +1,11 @@
-package Projects.MP3A_Cards;
+package Projects.MP3B_ERS;
 
 /**
  * Name: Dylan M. Ravel
  * Student ID: 2445987
  * Chapman Email: ravel@chapman.edu
  * Course Number and Section: CPSC-231-02
- * Assignment: MP3A: Cards
+ * Assignment: MP3B: ERS
 **/
 
 /**
