@@ -18,7 +18,7 @@ public class Game {
     private static final String[] PATTERNS = {"doubles", "top bottom", "sandwich"};
 
     public Game() {
-        initializeGame(2);
+        initializeGame(4);
     }
 
     public Game(int numOfPlayers) {
@@ -51,16 +51,17 @@ public class Game {
         Player currentPlayer = m_players.get(0);
         // carries out the rules of the game until there is one Player remaining. At the end, it should return the integer of the winning Player.
         while(m_players.size() > 1) {
-            if(currentPlayer.getHand().isEmpty()) {
-                System.out.println("Player #" + currentPlayer.getPlayerNum() + " has run out of cards. They lose!");
-                m_players.remove(currentPlayer);
-            }
+
+            System.out.println("Player #" + currentPlayer.getPlayerNum() + " plays a turn.");
 
             Card playedCard = currentPlayer.playCard();
 
             if(playedCard == null) {
                 System.out.println("Player #" + currentPlayer.getPlayerNum() + " is out of cards. They lose!");
                 m_players.remove(currentPlayer);
+                if(m_players.size() > 0) {
+                    currentPlayer = m_players.get(0);
+                }
                 continue;
             }
 
@@ -69,7 +70,7 @@ public class Game {
             if(playedCard.isFaceCard()) {
                 handleFaceCard(currentPlayer, playedCard);
             } else if(currentPlayer.slaps(m_pile)) {
-                System.out.println("Player #" + currentPlayer.getPlayerNum() + " slaps the pile!");
+                System.out.println("Player #" + currentPlayer.getPlayerNum() + " slapped the pile!");
                 currentPlayer.getHand().addAll(m_pile);
                 m_pile.clear();
             }
