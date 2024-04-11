@@ -19,6 +19,9 @@ public class Deck {
     // Member variable for the list of cards
     private LinkedList<Card> m_cards = new LinkedList<Card>();
 
+    // Final Values for easy code readability
+    public static final int ALL_CARDS = 52;
+
     /**
      * A default constructor which creates a
      * deck of 52 cards.

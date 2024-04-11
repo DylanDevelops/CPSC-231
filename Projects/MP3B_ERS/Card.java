@@ -168,4 +168,13 @@ public class Card {
     public void setSuit(int suit) {
         m_suit = suit;
     }
+
+    /**
+     * A method to check if the card is a face card.
+     * 
+     * @return true if the card is a face card, false otherwise.
+     */
+    public boolean isFaceCard() {
+        return m_value >= JACK && m_value <= KING || m_value == 1;
+    }
 }

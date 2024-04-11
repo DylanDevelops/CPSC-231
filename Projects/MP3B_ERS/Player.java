@@ -45,11 +45,26 @@ public class Player {
     }
 
     public Card playCard() {
-        return m_hand.removeFirst();
+        if(!m_hand.isEmpty()) {
+            return m_hand.removeFirst();
+        } else {
+            return null;
+        }
     }
 
     public boolean slaps(LinkedList<Card> pile) {
-        // TODO: IMPLEMENT THIS:
-        return false;
+        switch (m_pattern) {
+            case "doubles":
+                return Game.doubles(pile);
+
+            case "top bottom":
+                return Game.topBottom(pile);
+        
+            case "sandwich":
+                return Game.sandwich(pile);
+
+            default:
+                return false;
+        }
     }
 }

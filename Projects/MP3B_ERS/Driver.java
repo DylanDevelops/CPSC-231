@@ -10,6 +10,10 @@ package Projects.MP3B_ERS;
 
 public class Driver {
     public static void main(String[] args) {
-        System.out.println("Hello");
+        Game game = new Game(4);
+
+        int winner = game.play();
+
+        System.out.println("The winner is: " + winner);
     }
 }
