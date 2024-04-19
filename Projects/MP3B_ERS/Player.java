@@ -1,5 +1,3 @@
-package Projects.MP3B_ERS;
-
 /**
  * Name: Dylan M. Ravel
  * Student ID: 2445987
@@ -51,8 +49,9 @@ public class Player {
     }
 
     /**
+     * Plays the players first card
      * 
-     * @return
+     * @return A card that is the card played by the player.
      */
     public Card playCard() {
         if(!m_hand.isEmpty()) {

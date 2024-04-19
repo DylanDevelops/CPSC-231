@@ -1,5 +1,3 @@
-package Projects.MP3B_ERS;
-
 /**
  * Name: Dylan M. Ravel
  * Student ID: 2445987

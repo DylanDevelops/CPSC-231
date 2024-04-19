@@ -1,5 +1,3 @@
-package Projects.MP3B_ERS;
-
 /**
  * Name: Dylan M. Ravel
  * Student ID: 2445987
@@ -10,10 +8,13 @@ package Projects.MP3B_ERS;
 
 public class Driver {
     public static void main(String[] args) {
-        Game game = new Game(7);
+        // Creates a new game with 4 players
+        Game game = new Game(4);
 
+        // Plays the game and saves the winner as a result.
         int winner = game.play();
 
-        System.out.println("The winner is: Player #" + winner);
+        // Prints out the winner of the game.
+        System.out.println("\n🥳 The winner is: Player #" + winner + "! 🎉");
     }
 }
