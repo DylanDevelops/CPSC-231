@@ -40,10 +40,20 @@ public class Player {
     public LinkedList<Card> getHand() { return m_hand; }
     public String getPattern() { return m_pattern; }
 
+    /**
+     * A toString method that is used anytime the 
+     * Object needs to be referenced as a String.
+     * 
+     * @return The String 
+     */
     public String toString() {
         return "Player #" + m_playerNum + "\nPattern: " + m_pattern + "\nHand: " + m_hand.toString();
     }
 
+    /**
+     * 
+     * @return
+     */
     public Card playCard() {
         if(!m_hand.isEmpty()) {
             return m_hand.removeFirst();
@@ -52,6 +62,12 @@ public class Player {
         }
     }
 
+    /**
+     * Determines if the player can "slap" the pile based on the current pattern.
+     * 
+     * @param pile the pile of cards to check for a valid slap
+     * @return true if the player can slap the pile, false otherwise
+     */
     public boolean slaps(LinkedList<Card> pile) {
         switch (m_pattern) {
             case "doubles":

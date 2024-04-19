@@ -14,3 +14,5 @@ However, I used four online resources, which were official Oracle documentation 
     - https://file.notion.so/f/f/bb2414b6-dc5b-48c8-91d6-c4e0d4496389/32052367-2a6c-4434-8fd2-cecf91f2515e/Chapman_Coding_Standards.pdf?id=33709c94-c7d7-4f49-9a34-3ddc4c78fe34&table=block&spaceId=bb2414b6-dc5b-48c8-91d6-c4e0d4496389&expirationTimestamp=1709517600000&signature=NA9CD-bjE5GNQde3aQA2uRhCYlPwCr1CmRZRGUXIxlk&downloadName=Chapman+Coding+Standards.pdf (Followed to adhere to Chapman coding practices)
     - https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html (Used to help me know methods I can use with LinkedLists)
     - https://www.geeksforgeeks.org/linked-list-in-java/ (Additional documentation on helping me understand LinkedLists)
+    - https://www.w3schools.com/java/ref_keyword_continue.asp (documentation on the 'continue' keyword)
+    
