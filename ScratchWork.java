@@ -1,13 +1,14 @@
-public class ScratchWork {
-    public static void main(String[] args) {
-        checkAge(15);
-    }
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
-    public static void checkAge(int age) {
-        if(age < 18) {
-            throw new ArithmeticException("Access Denied! - You must be 18!");
-        } else {
-            System.out.println("Access Granted!");
+public class ScratchWork {
+    public static void main(String[] args) throws FileNotFoundException {
+        FileInputStream stream = new FileInputStream("test.txt");
+        Scanner scnr = new Scanner(stream);
+
+        while(scnr.hasNextLine()) {
+            System.out.println(scnr.nextLine());
         }
     }
 }
